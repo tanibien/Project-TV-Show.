@@ -1,3 +1,60 @@
-#root {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f8f8f8;
+  color: #111;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#episode-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  text-align: center;
+  overflow: hidden;
+}
+
+#episode-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+#episode-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#episode-card p {
+  font-size: 0.9rem;
+  overflow: auto;
 }

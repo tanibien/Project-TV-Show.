@@ -23,7 +23,8 @@ function makePageForEpisodes(episodeList) {
     return clone;
   });
 
-  document.body.append(...cards);
+  const container = document.getElementById("card-container");
+  container.append(...cards);
 }
 
 window.onload = setup;
