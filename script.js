@@ -5,8 +5,25 @@ function setup() {
 }
 
 function makePageForEpisodes(episodeList) {
-  const rootElem = document.getElementById("root");
-  rootElem.textContent = `Got ${episodeList.length} episode(s)`;
+  const template = document.getElementById("template");
+  
+  const cards = episodeList.map(episode => {
+    const clone = template.content.cloneNode(true);
+
+    const title = clone.querySelector("#title-episode");
+    const image = clone.querySelector("#image");
+    const summary = clone.querySelector("#summary");
+
+    title.textContent = 
+    `${episode.name} S${String(episode.season).padStart(2, "0")}E${String(episode.number).padStart(2, "0")}`;
+    image.src = episode.image.medium;
+    image.alt = episode.name;
+    summary.innerHTML = episode.summary;
+
+    return clone;
+  });
+
+  document.body.append(...cards);
 }
 
 window.onload = setup;
