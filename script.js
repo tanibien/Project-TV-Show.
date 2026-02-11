@@ -14,8 +14,9 @@ function makePageForEpisodes(episodeList) {
     const image = clone.querySelector("#image");
     const summary = clone.querySelector("#summary");
 
-    title.textContent = 
-    `${episode.name} S${String(episode.season).padStart(2, "0")}E${String(episode.number).padStart(2, "0")}`;
+    title.innerHTML = 
+    `<a href="${episode.url}" target="_blank">${episode.name}</a> 
+    S${String(episode.season).padStart(2,"0")}E${String(episode.number).padStart(2,"0")}`;
     image.src = episode.image.medium;
     image.alt = episode.name;
     summary.innerHTML = episode.summary;

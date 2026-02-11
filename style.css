@@ -58,3 +58,10 @@ img {
   font-size: 0.9rem;
   overflow: auto;
 }
+
+footer {
+  text-align:center;
+  margin-top:2rem;
+  font-size:0.9rem;
+  color:#555;
+}
