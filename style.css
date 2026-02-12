@@ -5,63 +5,79 @@
 }
 
 html, body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  background-color: #f8f8f8;
-  color: #111;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* Стили для главного заголовка страницы */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+header h1 {
+  font-size: 1.5rem;
+}
 
 #card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
-  padding: 1rem;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-#episode-card {
+.episode-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 400px;
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
-  text-align: center;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
+  text-align: center;
 }
 
-#episode-card img {
+.title-episode {
+  font-size: 1.1rem;
+  padding: 15px;
+  background: #eee;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-episode a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.image-display {
   width: 100%;
   height: auto;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
+  padding: 10px;
 }
 
-#episode-card h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-#episode-card p {
+.summary-text {
+  padding: 15px;
   font-size: 0.9rem;
-  overflow: auto;
+  text-align: left;
 }
 
-footer {
-  text-align:center;
-  margin-top:2rem;
-  font-size:0.9rem;
-  color:#555;
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: #2c3e50;
+  color: white;
+}
+
+.site-footer a {
+  color: #3498db;
 }
