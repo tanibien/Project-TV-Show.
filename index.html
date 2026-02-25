@@ -12,6 +12,18 @@
   </head>
 
   <body>
+    <header class="controls" style="padding: 10px; display: flex; gap: 10px; align-items: center;">
+      <select id="show-selector">
+        <option value="">Select a show...</option>
+      </select>
+
+      <select id="episode-selector">
+        <option value="">Select an episode...</option>
+      </select>
+
+      <input type="text" id="search-input" placeholder="Search episodes...">
+      <span id="results-count"></span>
+    </header>
     <div id="card-container"></div>
 
     <template id="template">
@@ -21,8 +33,6 @@
         <div class="summary-text"></div>
       </div>
     </template>
-
-    <script src="episodes.js"></script>
 
     <script src="script.js"></script>
 
